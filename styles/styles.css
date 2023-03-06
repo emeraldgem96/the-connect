@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: 'League Spartan', sans-serif;
+    --body-font: 'Lora', serif;
+    --main-black: #000000;
+    --main-red: #e31b23;
+    --main-green: #12853f; 
+    --head-color-text: #ffffff; 
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+/* Media Queries */
+/* Smartphone */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    
+}
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+}
+/* Desktop and beyond */
+@media screen and (min-width: 769px) {
+    
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the connect</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Lora&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b0fae524e5.js" crossorigin="anonymous"></script>
+    <script defer src="/scripts/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="/public/images/theConnect_logo.png" alt="the connect logo with black background and white text"></a>
+        </div>
+        <nav>
+            <!-- Need to remove decoration and adjust the a: settings for link, visited, hover, etc. -->
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="reviews.html">reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+         <h1>Write a Review</h1>
+        <form>
+            <div>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name">
+
+            <label for="businessname">Business Name:</label> 
+            <input type="text" id="businessname" name="businessname">
+            
+                <label>
+                    What would you rating this business? 
+                    <select>
+                        <option value="">--</option>
+                        <option value="1">1 star</option>
+                        <option value="2">2 stars</option>
+                        <option value="3">3 stars</option>
+                        <option value="4">4 stars</option>
+                        <option value="5">5 stars</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+            <label for="title">Review Title:</label>
+            <input type="text" id="title">
+
+            <label for="thecomment">My Review:</label>
+            <textarea id="thecomment" name="thecomment" rows="4" cols="20" placeholder="Your comments go here..."></textarea>
+
+            <label>
+                Would you recommend this business? Select yes or no. 
+                <select>
+                  <option value="">--</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </label>
+
+            <label>
+                What category is this business under? Food or retail.
+                <select>
+                    <option value="">--</option>
+                    <option value="food">Food</option>
+                    <option value="retail">Retail</option>
+                </select>
+            </label>
+            </div>
+
+            <label for="img">Upload images:</label>
+            <input type="file" id="img" name="img" accept="image/">
+
+            <p>By submitting this review, you agree to our <a href="#">Terms & Privacy Agreement</a>.</p>
+
+            <button type="submit" value="submit">Submit Review</button>
+        </form>
+        <section>
+            <h2>Share on social media!</h2>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h3>Based in</h3>
+            <p>Atlanta, GA</p>
+        </section>
+        <section>
+            <h3>Links</h3>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="reviews.html">reviews</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
