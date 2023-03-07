@@ -13,13 +13,13 @@
     <script defer src="/scripts/scripts.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header-flex">
         <div>
             <a href="index.html"><img src="/public/images/theConnect_logo.png" alt="the connect logo with black background and white text"></a>
         </div>
         <nav>
             <!-- Need to remove decoration and adjust the a: settings for link, visited, hover, etc. -->
-            <ul>
+            <ul class="li-flex">
                 <li><a href="index.html">home</a></li>
                 <li><a href="login.html">login</a></li>
                 <li><a href="reviews.html">reviews</a></li>
@@ -30,27 +30,33 @@
         <section class="connect-banner">
             <img src="/public/images/theConnect_banner.png" alt="the connect logo with slogan 'your connection to black-owned businesses' with black background and white text">
         </section>
-        <div class="">
+        <section class="title-connect">
+            <h1>Welcome to <span class="highlight">the connect.</span></h1>
+            <p>The connect is your connection to black-owned businesses in the Atlanta (and surrounding) area. You can access reviews and write reviews about your experience.</p>
+        </section>
+        <div class="container-feature-categories">
             <!-- class selector will be used to flex the sections -->
-            <section>
+            <section class="container-feature-section">
                 <h2>Featured Business</h2>
                     <img src="/public/images/sluty vegan.png" alt="the slutty vegan logo with white background and red colored text">
                 <h3>Slutty Vegan </h3>
                     <p>Slutty Vegan brings vegan options and food awareness to the communities they serve. Also, they open the conversation about vegan food being an option for people in a community plagued by hypertension, cholesterol, obesity, and food-borne illness.</p>
                     <p>- Slutty Vegan ATL, 2023 </p>
+                    <p>You can learn more or view a menu at the <a href="https://sluttyveganatl.com/">Slutty Vegan website. </a></p>
             </section>
-            <section>
+            <section class="container-categories-section">
                 <h2>Categories</h2>
             <!-- In the <p> we will include a follow this link to access the food category. We will also add a brief description of the food and retail categories -->
-                    <details>
+                <p class="italicize">Expand each category to view and access specifics.</p>    
+                <details>
                         <summary>Food</summary>
                         <p>If you didn't guess by now, this category is about all things food. From quick bites to sitting down at a table for a gastronomical experience.</p>
-                        <p>View the businesses under food, check out our <a href="categories-food.html">food category</a></p>
+                        <p>View the businesses under food, check out our <a href="categories-food.html">food category</a>.</p>
                     </details>
                     <details>
                         <summary>Retail</summary>
                         <p>This category is all about spending that check in the best way. You will find a whole host of businesses that you can spend your money on and get a lovely product in return.</p>
-                        <p>To view the businesses under retail, check out our <a href="categories-retail.html">retail category</a></p>
+                        <p>To view the businesses under retail, check out our <a href="categories-retail.html">retail category</a>.</p>
                     </details>
             </section>
         </div>
