@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the connect</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/forms.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Lora&display=swap" rel="stylesheet">
@@ -27,28 +28,39 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="container-login">
             <h1>Login</h1> 
             <!-- https://www.tutorialspoint.com/How-to-hide-HTML-element-with-JavaScript (for showing and hiding elements with a button)  -->
             
             <!--Form pseudocode/layout with hidden signup form  -->
+            <div class="container-login-form">
             <form>
                <label for="uname">Username:</label> 
                <input type="text" placeholder="Enter Username" name="uname">
 
                <label for="psw">Password:</label>
                <input type="password" placeholder="Enter Password" name="psw">
-
-               <button type="submit">Submit</button>
-
-               <label>
-               <input type="checkbox" name="remember">Remember me?</label>
-            
-               <p><a href="">Forgot password?</a></p>
-            </form> 
-            <button onclick="createAccount()">Create an account</button>
-            <form id="signupForm">
                 
+               <div class="forgot-remember">
+                <p><a href="">Forgot password?</a></p>
+
+                <input type="checkbox" name="remember">
+                <label for=" remember">Remember me?</label>
+                
+                </div>
+                
+            <div class="container-login-create">
+                <button type="submit">Submit</button>
+            </div>
+            </form>
+            </div>
+
+            <div class="container-login-create">
+                <button onclick="createAccount()">Create an account</button>
+            </div>
+            <section class="hidden-form">
+            <form id="signupForm">
+                <h2>Create an account</h2>
                     <label for="fname">First name:</label>
                     <input type="text" id="fname" name="fname">
 
@@ -64,11 +76,12 @@
                     <label for="psw-repeat">Repeat Password:</label>
                     <input type="password" placeholder="Repeat password" name="psw-repeat">
 
-                    <input type="checkbox" id="agreementcheck" name="agreementcheck" value="termsandprivacy">
-                    <label for ="agreementcheck">By creating an account, you agree to our <a href="#">Terms & Privacy Agreement</a>.</label>
-
-                    <button type="submit" value="Submit">Submit</button>
+                    <p>By creating an account, you agree to our <a href="#">Terms & Privacy Agreement</a>.</p>
+                    <div class="signupButton">
+                        <button type="submit" value="Submit">Submit</button>
+                    </div>
                 </form>
+                </section>
         </section>
     </main>
     <footer>
