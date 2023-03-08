@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the connect</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/create-review.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Lora&display=swap" rel="stylesheet">
@@ -27,9 +28,10 @@
         </nav>
     </header>
     <main>
-         <h1>Write a Review</h1>
-        <form>
-            <div>
+         <h1><span class="highlight">Write a Review</span></h1>
+        <section class="overall-create">
+         <form>
+            <div class="intro-form">
             <label for="name">Your Name:</label>
             <input type="text" id="name">
 
@@ -37,7 +39,7 @@
             <input type="text" id="businessname" name="businessname">
             
                 <label>
-                    What would you rating this business? 
+                    What would you rating this business? </label>
                     <select>
                         <option value="">--</option>
                         <option value="1">1 star</option>
@@ -46,10 +48,9 @@
                         <option value="4">4 stars</option>
                         <option value="5">5 stars</option>
                     </select>
-                </label>
             </div>
 
-            <div>
+            <div class="review-info">
             <label for="title">Review Title:</label>
             <input type="text" id="title">
 
@@ -74,15 +75,19 @@
                 </select>
             </label>
             </div>
-
+            
             <label for="img">Upload images:</label>
             <input type="file" id="img" name="img" accept="image/">
-
-            <p>By submitting this review, you agree to our <a href="#">Terms & Privacy Agreement</a>.</p>
-
+            <section class="agreement">
+                <p>By submitting this review, you agree to our <a href="#">Terms & Privacy Agreement</a>.</p>
+            </section>
+            <div class="review-submit">
+                
             <button type="submit" value="submit">Submit Review</button>
+            </div>
         </form>
-        <section>
+        </section>
+        <section class="social-media">
             <h2>Share on social media!</h2>
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-square-instagram"></i>
