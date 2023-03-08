@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the connect</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/business-reviews.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Lora&display=swap" rel="stylesheet">
@@ -27,11 +28,12 @@
         </nav>
     </header>
 <main>
-    <h1>Nourish + Bloom Market</h1>
-    <!-- Bold the <p> below with CSS, we need to use JS to calculate the rating from the views using the numbers in ratings box -->
-    <p>Rating: </p>
-
-    <section>
+    <section class="main-adjust">
+        <h1><span class="highlight">Nourish + Bloom Market</span></h1>
+        <!-- Bold the <p> below with CSS, we need to use JS to calculate the rating from the views using the numbers in ratings box -->
+        <p>Rating: 5/5</p>
+    </section>
+    <section class="overall-review">
        <h2>General information:</h2> 
             <h3>Location:</h3>
                 <p>300 Trilith Parkway Suite 250, Fayetteville, GA 30214</p>
@@ -42,16 +44,20 @@
        <p>For more information about Slutty Vegan, you can visit the <a href="https://www.nourishandbloommarket.com/">Nourish + Bloom website.</a></p>
     </section>
     
-    <section>
+    <section class="overall-review">
         <h2>What the products look like:</h2>
         <!-- Italicize the <p> below with CSS -->
         <p>Images of the business products and customer experience</p>
         <!-- These <img> tags will be displayed from the images uploaded from the create a review form. -->
+        <div class="review-images">
+        <img src="/public/images/n-b-tacos.jpeg" alt="picture of pork tacos with sauce and sliced radish on the side with the nourish and bloom logo above">
+        <img src="/public/images/n-b-aisle.jpeg" alt="picture of the nourish and bloom snack aisle">
+        </div>
     </section>
-    <section>
+    <section class="overall-review">
         <h2>What people are saying:</h2>
         <!-- The <p> is where the form's <textarea> response will display in quotations. There will be several <p> tags with different quotes from multiple reviews.  -->
-        <p></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt. Praesent eget leo ac odio congue convallis id at felis. Phasellus elementum lobortis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque risus, tempor id sagittis ut, dapibus sit amet sapien. Donec mattis laoreet turpis ut ullamcorper. Pellentesque diam tortor, porttitor sed mollis eget, pellentesque eu erat. Etiam pretium nisi nec tincidunt varius. Nam convallis sollicitudin imperdiet. Vestibulum lacinia molestie lectus, at consectetur odio interdum non. Phasellus eu nunc nec velit semper aliquet. Pellentesque aliquet tellus ante, ut viverra est tincidunt id.</p>
     </section>
 </main>
 <footer>

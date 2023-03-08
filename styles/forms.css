@@ -1,3 +1,7 @@
+body {
+    font-size: 2rem;
+}
+
 .container-login {
     margin: 5%;
     border-style: solid;
@@ -60,8 +64,15 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    width: 100%;
+}
+
+.remember {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 5%;
 }
 
 .signupButton {
