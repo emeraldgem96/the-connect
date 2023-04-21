@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the connect</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/create-review.css">
+    <link href="/public/styles/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Sanchez&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b0fae524e5.js" crossorigin="anonymous"></script>
-    <script defer src="/scripts/scripts.js"></script>
+    <script defer src="/public/scripts/scripts.js"></script>
 </head>
 <body>
     <header>
-        <div>
-            <a href="index.html"><img src="/public/images/theConnect_logo.png" alt="the connect logo with black background and white text"></a>
+        <div class="header-logo">
+            <a href="/views/pages/index.html"><img src="/public/images/header-logo.png" alt="the connect logo; black background with cream and blue text color"></a>
         </div>
-        <nav>
-            <!-- Need to remove decoration and adjust the a: settings for link, visited, hover, etc. -->
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="login.html">login</a></li>
-                <li><a href="reviews.html">reviews</a></li>
-            </ul>
+
+        <nav class="navbar">
+                <ul>
+                    <li><a href="/views/pages/index.html">home</a></li>
+                    <li><a href="/views/pages/login.html">login</a></li>
+                    <li><div class="dropdown">
+                    <button class="dropbtn"><a href="/views/pages/reviews.html">reviews</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                        <div class="dropdown-content">
+                            <a href="/views/pages/categories-food.html">food</a>
+                            <a href="/views/pages/categories-retail.html">retail</a>
+                        </div>
+                    </div></li>
+                </ul>
         </nav>
     </header>
+    <hr>
     <main>
          <h1><span class="highlight">Write a Review</span></h1>
         <section class="overall-create">
@@ -94,19 +102,21 @@
             <i class="fa-brands fa-square-twitter"></i>
         </section>
     </main>
-    <footer>
-        <section>
+    <footer class="footer-layout">
+        <div>
             <h3>Based in</h3>
             <p>Atlanta, GA</p>
-        </section>
-        <section>
+            <img src="/public/images/atl-map-edit.png" alt="a map of georgia with the city of atlanta highlighted">
+        </div>
+
+        <div>
             <h3>Links</h3>
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="login.html">login</a></li>
-                <li><a href="reviews.html">reviews</a></li>
+                <li><a href="/views/pages/index.html">home</a></li>
+                <li><a href="/views/pages/login.html">login</a></li>
+                <li><a href="/views/pages/reviews.html">reviews</a></li>
             </ul>
-        </section>
+        </div>
     </footer>
 </body>
 </html>

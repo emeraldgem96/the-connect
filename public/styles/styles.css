@@ -195,6 +195,20 @@ details > p a:hover {
     padding: 5%;
 }
 
+.feature-content a:link,
+.feature-content a:visited,
+.feature-content a:active {
+    text-decoration: underline 3px var(--haint-blue);
+    color: var(--off-black);
+}
+
+.feature-content a:hover {
+    background-color: var(--off-black);
+    color: var(--star-white);
+    font-size: 105%;
+    padding: 1%;
+}
+
 .feature-img {
     width: 80%;
     margin: auto;
@@ -240,6 +254,19 @@ details > p a:hover {
 .footer-layout li {
     margin: auto;
     padding-bottom: 4%;
+}
+
+.footer-layout a:link,
+.footer-layout a:visited,
+.footer-layout a:active {
+    text-decoration: none;
+    color: var(--star-white);
+}
+
+.footer-layout a:hover {
+    text-decoration: underline 2px var(--haint-blue);
+    color: var(--star-white);
+    font-size: 105%;
 }
 
 /* Medi Queries */
