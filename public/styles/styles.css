@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: var(--body-font);
+    background-color: var(--star-white);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+:root {
+    --heading-font: 'Barrio', cursive;
+    --body-font: 'Sanchez', serif;
+    --off-black: #212121;
+    --haint-blue: #c1d8d9;
+    --star-white: #efefe8;
+}
+
+/* Header Layout */
+.header-logo {
+    background-color: var(--off-black);
+    width: 100%;
+}
+
+.header-logo img{
+    max-width: 25%;
+    display: block;
+    margin: auto;
+}
+
+/* Navigation Layout */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 1%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.navbar li {
+    width: 20%;
+}
+
+.navbar a {
+    text-align: center;
+}
+
+.dropbtn {
+    border: none;
+    outline: none;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+}
+
+nav a:link, 
+nav a:visited {
+    text-decoration: none;
+    color: var(--off-black);
+}
+
+nav a:active {
+    text-decoration: none;
+    color: var(--haint-blue);
+}
+
+.navbar a:hover, .dropdown a:hover, .dropbtn:hover {
+    background-color: var(--haint-blue);
+    padding: 5%;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: var(--star-white);
+    min-width: 8%;
+}
+
+.dropdown-content a:link,
+.dropdown-content a:active,
+.dropdown-content a:visited {
+    text-decoration: none;
+    color: var(--star-white);
+    background-color: var(--off-black);
+    display: block;
+    text-align: center;
+    padding: 3%;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--haint-blue);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Intro Section */
+hr {
+    position: relative;
+    height: 10px;
+    background-color: var(--haint-blue);
+    border-width: 0;
+}
+
+.top-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.logo-adjust img {
+    display: block;
+    width: 30%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.logo-adjust {
+    width: 100%;
+    margin: auto;
+}
+
+.about-adjust {
+    width: 80%;
+    margin: auto;
+    border: 10px solid var(--haint-blue);
+    padding: 5%;
+}
+
+.about-adjust span {
+    background-color: var(--haint-blue);
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+
+details > summary {
+    text-align: center;
+    width: 100%;
+    background-color: var(--haint-blue);
+    padding: 1%;
+    border: none;
+    list-style: none;
+    margin-bottom: 3%;
+}
+
+details > p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+details > p a:link,
+details > p a:visited,
+details > p a:active {
+    text-decoration: underline 3px var(--haint-blue);
+    color: var(--off-black);
+}
+
+details > p a:hover {
+    background-color: var(--off-black);
+    color: var(--star-white);
+    font-size: 105%;
+    padding: 1%;
+}
+
+/* Feature section */
+.centered {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.feature-content {
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    border: 10px solid var(--haint-blue);
+    padding: 5%;
+}
+
+.feature-img {
+    width: 80%;
+    margin: auto;
+    border: 10px solid var(--off-black);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-img img{
+    margin: auto;
+    width: 50%;
+    padding: 5%;
+}
+/* Footer Layout */
+.footer-layout {
+    background-color: var(--off-black);
+    color: var(--star-white);
+    border-top: 10px solid var(--haint-blue);   
+}
+
+.footer-layout img {
+    width: 35%;
+    margin: auto;
+}
+
+.footer-layout div h3 {
+    display: flex;   
+    margin: auto; 
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.footer-layout p, img {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-layout ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+.footer-layout li {
+    margin: auto;
+    padding-bottom: 4%;
+}
+
+/* Medi Queries */
+@media screen and (max-width: 768px) {
+    h1, h2, h3, p {
+        font-size: 1rem;
+    }
+    .feature-content {
+        margin: auto;
+        margin-top: 2%;
+    }
+}
