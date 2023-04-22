@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the connect</title>
     <link href="/public/styles/styles.css" rel="stylesheet">
+    <link href="/public/styles/forms.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Sanchez&display=swap" rel="stylesheet">
@@ -36,64 +37,77 @@
     </header>
     <hr>
     <main>
-        <section class="container-login">
-            <h1>Login</h1> 
+        <h1>Login</h1> 
             <!-- https://www.tutorialspoint.com/How-to-hide-HTML-element-with-JavaScript (for showing and hiding elements with a button)  -->
             
             <!--Form pseudocode/layout with hidden signup form  -->
-            <div class="container-login-form">
-            <form>
-               <label for="uname">Username:</label> 
-               <input type="text" placeholder="Enter Username" name="uname">
-
-               <label for="psw">Password:</label>
-               <input type="password" placeholder="Enter Password" name="psw">
-                
-               <div class="forgot-remember">
-                <p><a href="">Forgot password?</a></p>
-
-                <div class="remember">
-                <label for="rembember">Remember me?</label>
-                <input type="checkbox" name="remember">  
+        <div>
+            <form class="container-login">
+                <div>
+                    <label for="uname">Username:</label> 
+                    <input type="text" placeholder="Enter Username" name="uname">
                 </div>
-                
-                
-                
-                </div>
-                
-            <div class="container-login-create">
-                <button type="submit">Submit</button>
-            </div>
-            </form>
-            </div>
 
-            <div class="container-login-create">
-                <button onclick="createAccount()">Create an account</button>
-            </div>
-            <section class="hidden-form">
-            <form id="signupForm">
-                <h2>Create an account</h2>
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname">
-
-                    <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname">
-
-                    <label for="email">Email:</label>
-                    <input type="text" placeholder="Enter Email address" name="email">
-
+                <div>
                     <label for="psw">Password:</label>
-                    <input type="password" placeholder="Enter password" name="psw">
+                    <input type="password" placeholder="Enter Password" name="psw">
+                </div>
 
-                    <label for="psw-repeat">Repeat Password:</label>
-                    <input type="password" placeholder="Repeat password" name="psw-repeat">
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
 
-                    <p>By creating an account, you agree to our <a href="#">Terms & Privacy Agreement</a>.</p>
-                    <div class="signupButton">
+                <div>
+                    <a href="">Forgot password?</a>
+                </div>
+                
+                <div>
+                    <label for="rembember">Remember me?</label>
+                    <input type="checkbox" name="remember">  
+                </div>
+            </form>
+        </div>
+
+        <div id="center-create">
+            <button class="create-button" onclick="createAccount()">Click the button to create an account.</button>
+        </div>
+
+        <section>
+            <form id="signupForm" class="signupForm-flex">
+                <h2>Create an account</h2>
+                    <div>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="First name">
+                    </div>
+
+                    <div>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last name">
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" placeholder="Enter Email address" name="email">
+                    </div>
+
+                    <div>
+                        <label for="psw">Password:</label>
+                        <input type="password" placeholder="Enter password" name="psw">
+                    </div>
+
+                    <div>
+                        <label for="psw-repeat">Repeat Password:</label>
+                        <input type="password" placeholder="Repeat password" name="psw-repeat">
+                    </div>
+
+                    <div>
+                        <p>By creating an account, you agree to our <a href="#">Terms & Privacy Agreement</a>.</p>
+                    </div>
+
+                    <div id="centered">
                         <button type="submit" value="Submit">Submit</button>
                     </div>
-                </form>
-                </section>
+            </form>
         </section>
     </main>
     <footer class="footer-layout">

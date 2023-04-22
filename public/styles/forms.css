@@ -1,97 +1,115 @@
-body {
-    font-size: 2rem;
+/* Login form CSS */
+h1, h2{
+    text-align: center;
 }
 
 .container-login {
-    margin: 5%;
-    border-style: solid;
-    border-width: 5px;
-    border-color: var(--main-red);
-}
-
-.container-login h1 {
+    border: 5px solid var(--off-black);
+    width: 80%;
+    margin: auto;
+    padding: 2% 5%;
     text-align: center;
-    padding-top: 2%;
-}
-
-.container-login-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
-    padding: 2%;
 }
 
-.container-login form {
-    display: inline-block;
-    width: 50%;
-    margin: auto;
-    padding-left: 5%;
-    padding-right: 5%;
+.container-login div {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 
-.container-login-create {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
+.container-login a:link, a:visited, a:active {
+    text-decoration: none;
+    color: var(--off-black);
+    background-color: var(--haint-blue);
+    padding: 1%;
 }
 
-.container-login-form p {
-    text-align: center;
+.container-login a:hover {
+    text-decoration: none;
+    color: var(--star-white);
+    background-color: var(--off-black);
 }
 
-.container-login button {
-    background-color: var(--main-green);
-    color: var(--head-color-text);
+.container-login input[type='text'], input[type='password'] {
+    width: 30%;
+    border: none;
+    border-bottom: 3px solid var(--off-black);
+    background-color: var(--star-white);
+}
+
+.container-login button[type='submit'] {
+    border: none;
     font-family: var(--body-font);
-    padding: 5px;
-    margin: 2%;
+    font-size: 1.1rem;
+    background-color: var(--haint-blue);
+    padding: 1%;
 }
 
-.container-login h2{
+#centered {
     text-align: center;
 }
 
-.container-login label, input[type=text], input[type=password] {
-    display: flex;
+.create-button {
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    background-color: var(--haint-blue);
+    padding: 1%;
     margin: auto;
-    margin-bottom: 1%;
-    width: 60%;
 }
 
-.forgot-remember {
+#center-create {
+    text-align: center;
     margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+/* Create account CSS */
+.signupForm-flex {
+    border: 5px solid var(--haint-blue);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2%;
+    padding: 2% 5%;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-
-.remember {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding-bottom: 5%;
-}
-
-.signupButton {
-    display: flex;
     justify-content: center;
-    margin: auto;
-    padding-bottom: 5%;
 }
 
-.container-login a:link, 
-    .container-login a:visited {
-        color: var(--main-red);
-        text-decoration: none;
+.signupForm-flex input[type='text'], input[type='password'] {
+    width: 30%;
+    border: none;
+    border-bottom: 3px solid var(--off-black);
+    background-color: var(--star-white);
 }
 
-.container-login a:hover,
-    .container-login a:active {
-        font-size: 110%;
-        background-color: var(--main-black);
-        color: var(--head-color-text);
-        text-decoration: none;
+.signupForm-flex div {
+    padding-top: 1%;
+    padding-bottom: 1%;   
+}
+
+.signupForm-flex a {
+    text-decoration: none;
+    color: var(--off-black);
+    background-color: var(--haint-blue);
+    padding: 1%;
+}
+
+.signupForm-flex a:hover {
+    text-decoration: none;
+    color: var(--star-white);
+    background-color: var(--off-black);
+}
+
+.signupForm-flex button[type='submit'] {
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    background-color: var(--haint-blue);
+    padding: 1%;
 }
