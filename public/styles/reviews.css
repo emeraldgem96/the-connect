@@ -1,76 +1,95 @@
-body {
-    font-size: 2rem;
-}
-
-.reviews-main {
+/* Reviews Header/Top Section */
+h1 {
     text-align: center;
-    padding-top: 2%;
+    text-decoration: solid underline var(--haint-blue);
 }
 
-.reviews-overall {
-    border-style: solid;
-    border-width: 5px;
-    border-color: var(--main-red);
-    margin: 5%;
-    padding: 5%;
+h3, p {
+    text-align: center;
 }
 
-.container-images {
-    background-color: var(--main-black);
-    border-style: solid;
-    border-width: 5px;
-    border-color: var(--main-green);
-    padding: 2%;
+.category-links {
+    text-align: center;
+}
+
+.category-links div {
+    margin: 1%;
+}
+
+.category-links a:link, a:visited, a:active {
+    text-decoration: underline 3px var(--haint-blue);
+    color: var(--off-black);
+}
+
+.category-links a:hover {
+    background-color: var(--off-black);
+    color: var(--star-white);
+    font-size: 105%;
+    padding: 1%;
+}
+
+.button-center {
+    text-align: center;
+}
+
+.reviews-button {
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    background-color: var(--haint-blue);
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%; 
+    text-align: center;
+    width: 30%;
+}
+
+
+/* Actual reviews with images and buttons */
+.gallery-flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
-.container-images img {
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--head-color-text);
+div.gallery {
+    border: 7px solid var(--haint-blue);
+    padding: 1%;
+    margin: 5%;
     width: 40%;
-    transition: transform .5s;
 }
 
-.container-images img:hover {
-    transform: scale(1.3);
+div.gallery img {
+    width: 100%;
+    margin-top: 1%;
 }
 
-.review-info {
-    padding-top: 2%;
-    padding-bottom: 2%;
+div.gallery-desc {
+    border: solid 5px var(--off-black);
+    margin-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
 }
 
-.reviews-main a:link, 
-    .reviews-main a:visited {
-        color: var(--main-red);
-        text-decoration: none;
+#adjust-p {
+    padding-bottom: 4%;
 }
 
-.reviews-main a:hover,
-    .reviews-main a:active {
-        font-size: 110%;
-        padding: .5%;
-        background-color: var(--main-green);
-        color: var(--head-color-text);
-        text-decoration: none;
+.more-button {
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    background-color: var(--haint-blue);
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 5%; 
+    text-align: center;
+    width: 30%;
 }
 
-.reviews-overall a:link, 
-    .reviews-overall a:visited {
-        color: var(--main-red);
-        text-decoration: none;
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .gallery-flex {
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
-.reviews-overall a:hover,
-    .reviews-overall a:active {
-        font-size: 110%;
-        padding: .5%;
-        background-color: var(--main-green);
-        color: var(--head-color-text);
-        text-decoration: none;
-}
-
