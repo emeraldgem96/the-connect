@@ -65,17 +65,21 @@ h1, h2, h3 {
 }
 
 nav a:link, 
-nav a:visited {
-    text-decoration: none;
-    color: var(--off-black);
-}
-
+nav a:visited,
 nav a:active {
     text-decoration: none;
-    color: var(--haint-blue);
+    color: var(--off-black);
+    font-size: 1.2rem;
 }
 
-.navbar a:hover, .dropdown a:hover, .dropbtn:hover {
+nav a:hover {
+    text-decoration: none;
+    color: var(--off-black);
+    background-color: var(--haint-blue);
+    padding: 5%;
+}
+
+.dropdown a:hover, .dropbtn:hover {
     background-color: var(--haint-blue);
     padding: 5%;
 }
@@ -105,6 +109,10 @@ nav a:active {
     display: block;
 }
 
+.dropbtn a:link, a:active, a:visited {
+    font-size: 1.2rem;
+    background-color: var(--star-white);
+}
 
 /* Intro Section */
 hr {
@@ -273,6 +281,10 @@ details > p a:hover {
 @media screen and (max-width: 768px) {
     h1, h2, h3, p {
         font-size: 1rem;
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
     }
     .feature-content {
         margin: auto;

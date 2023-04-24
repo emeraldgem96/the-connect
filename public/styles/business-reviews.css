@@ -1,4 +1,161 @@
-body {
+/* Business name and info section */
+.title-desc {
+    text-align: center;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+/* General information and reviews section */
+.general-info {
+    background-color: var(--off-black);
+    display: flex;
+    justify-content: center;
+    border: 10px solid var(--haint-blue);
+}
+
+.general-info div {
+    border: 5px solid var(--haint-blue);
+    background-color: var(--star-white);
+    padding: 3%;
+    width: 100%;
+    max-height: 40%;
+}
+
+.general-info h2, h3, p {
+    text-align: center;
+}
+
+.general-info th {
+    background-color: var(--off-black);
+    color: var(--star-white);
+}
+
+.general-info table, th, td {
+    border: 5px solid var(--haint-blue);
+}
+
+.general-info table {
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+}
+
+.general-info th, td {
+    padding: 1%;
+}
+
+.general-info tr:hover {
+    background-color: var(--off-black);
+    color: var(--star-white);
+}
+
+.general-info a:link, a:visited, a:active {
+    text-decoration: underline 3px var(--haint-blue);
+    color: var(--off-black);
+}
+
+.general-info a:hover {
+    background-color: var(--off-black);
+    color: var(--star-white);
+    font-size: 105%;
+    padding: 1%;
+}
+
+.first-box {
+    margin: 3%;
+}
+
+.second-box {
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    height: 1100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Image review section */
+.image-review {
+    background-color: var(--haint-blue);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 10px solid var(--off-black);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.review-images {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5%;
+    border: 5px solid var(--off-black);
+    background-color: var(--star-white);
+}
+
+.review-images img{
+    border: 3px solid var(--haint-blue);
+    width: 30%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transition: transform .2s;
+}
+
+.review-images img:hover {
+    transform: scale(1.5);
+}
+
+.more-button {
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    color: var(--star-white);
+    background-color: var(--off-black);
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 5%; 
+    text-align: center;
+    width: 30%;
+}
+
+/* Media Query */
+@media screen and (max-width: 320px) {
+    .review-images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+    .general-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .general-info div {
+        width: 90%;
+    }
+    .general-info table {
+        margin: auto;
+        text-align: center;
+    }
+    .location {
+        display: none;
+    }
+    .second-box {
+        margin-left: 3%;
+        height: 600px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+
+/* body {
     font-size: 2em;
 }
 
@@ -78,4 +235,4 @@ main a:hover,
         background-color: var(--main-green);
         color: var(--head-color-text);
         text-decoration: none;
-}
+} */

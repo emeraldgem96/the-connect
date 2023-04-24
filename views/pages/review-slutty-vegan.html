@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the connect</title>
     <link href="/public/styles/styles.css" rel="stylesheet">
+    <link href="/public/styles/business-reviews.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Sanchez&display=swap" rel="stylesheet">
@@ -34,72 +35,104 @@
                 </ul>
         </nav>
     </header>
-    <hr>
-<main > 
-    <section class="main-adjust">
-        <h1><span class="highlight">Slutty Vegan</span></h1>
-        <!-- Bold the <p> below with CSS, we need to use JS to calculate the rating from the views using the numbers in ratings box -->
+<main>
+    <hr> 
+    <section class="title-desc">
+        <a href="/views/pages/reviews.html">Return to Reviews</a>
+        <h1>Slutty Vegan</h1>
+        <h3>Serving up:</h3>
+            <p>Veganized American classics like burgers and fries with Southern delicacies like sweet potato pie and banana pudding.</p>
         <p>Rating: 5/5</p>
+        <!-- Bold the <p> below with CSS, we need to use JS to calculate the rating from the views using the numbers in ratings box -->
     </section>
-    <section class="overall-review">
-        <h2>General information:</h2>
-        <h3>Locations:</h3>
-        <table>
-            <tbody>
-                <tr>
-                   <td>Ralph David</td> 
-                   <td>1542 Ralph David Abernathy Blvd SW, Atlanta, GA 30310</td>
-                </tr>
-                <tr>
-                    <td>Jonesboro</td>
-                    <td>164 McDonough Street, Jonesboro, GA 30235</td>
-                </tr>
-                <tr>
-                    <td>Edgewood</td>
-                    <td>476 Edgewood Ave SE, Atlanta, GA 30312</td>
-                </tr>
-                <tr>
-                    <td>Gwinnett</td>
-                    <td>2045 Pleasant Hill Rd, Duluth, GA 30096</td>
-                </tr>
-                <tr>
-                    <td>Athens</td>
-                    <td>700 Baxter Street Suite 800, Athens, GA 30605</td>
-                </tr>
-                <tr>
-                    <td>Georgia Tech</td>
-                    <td>351 Ferst Drive NW, Atlanta, GA 30313</td>
-                </tr>
-                <tr>
-                    <td>Birmingham</td>
-                    <td>7 55th Place, Birmingham, AL 35212</td>
-                </tr>
-                <tr>
-                    <td>Brooklyn</td>
-                    <td>650 Fulton Street, Brooklyn, NY 11217</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>Serving up:</h3> 
-            <p>Veganized American classics like burgers and fries with Southern delicacies like sweet potato pie and banana pudding</p>
+    <section class="general-info">
         
-        <p>For more information about Slutty Vegan, you can visit the <a href="https://sluttyveganatl.com/">Slutty Vegan website.</a></p>
-    </section>
-    <section class="overall-review">
-        <h2>What the products look like:</h2>
-        <!-- Italicize the <p> below with CSS -->
-        <p>Images of the business products and customer experience</p>
-        <div class="review-images">
-        <img src="/public/images/slutty-vegan.jpeg" alt="a slutty vegan meal displayed on a wooden table with a red slutty vegan sign in the background">
-        <img src="/public/images/slutty-vegan-arm.jpg" alt="an arm holding a sandwich in front of a red slutty vegan sign">
-        <!-- These <img> tags will be displayed from the images uploaded from the create a review form. -->
+        <div class="first-box">
+            <h2>General information:</h2>
+            <h3>Locations:</h3>
+            <table>
+                <tbody>
+                    <thead>
+                        <th class="location">Location Name</th>
+                        <th>Address</th>
+                        <th>City & State</th>
+                    </thead>
+                    <tr>
+                        <td class="location">Ralph David</td> 
+                        <td>1542 Ralph David Abernathy Blvd SW </td>
+                        <td>Atlanta, GA 30310</td>
+                    </tr>
+                    <tr>
+                        <td class="location">Jonesboro</td>
+                        <td>164 McDonough Street</td>
+                        <td>Jonesboro, GA 30235</td>
+                    </tr>
+                    <tr>
+                        <td class="location">Edgewood</td>
+                        <td>476 Edgewood Ave SE </td>
+                        <td>Atlanta, GA 30312</td>
+                    </tr>
+                    <tr>
+                        <td class="location">Gwinnett</td>
+                        <td>2045 Pleasant Hill Rd </td>
+                        <td>Duluth, GA 30096</td>
+                    </tr>
+                    <tr>
+                        <td class="location">Athens</td>
+                        <td>700 Baxter Street Suite 800 </td>
+                        <td>Athens, GA 30605</td>
+                    </tr>
+                    <tr>
+                        <td class="location">Georgia Tech</td>
+                        <td>351 Ferst Drive NW </td>
+                        <td>Atlanta, GA 30313</td>
+                    </tr>
+                    <tr>
+                        <td class="location">Birmingham</td>
+                        <td>7 55th Place</td>
+                        <td>Birmingham, AL 35212</td>
+                    </tr>
+                    <tr>
+                        <td class="location">Brooklyn</td>
+                        <td>650 Fulton Street</td>
+                        <td>Brooklyn, NY 11217</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>For more information about Slutty Vegan, you can visit the <a href="https://sluttyveganatl.com/">Slutty Vegan website.</a></p>
+        </div>
+        
+        <div class="second-box">
+            <h2>What people are saying:</h2>
+            <!-- The <p> is where the form's <textarea> response will display in quotations. There will be several <p> tags with different quotes from multiple reviews.  -->
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p> 
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p> 
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p> 
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p> 
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p>  
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p> 
         </div>
     </section>
-    <section class="overall-review"> 
-        <h2>What people are saying:</h2>
-        <!-- The <p> is where the form's <textarea> response will display in quotations. There will be several <p> tags with different quotes from multiple reviews.  -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt. Praesent eget leo ac odio congue convallis id at felis. Phasellus elementum lobortis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque risus, tempor id sagittis ut, dapibus sit amet sapien. Donec mattis laoreet turpis ut ullamcorper. Pellentesque diam tortor, porttitor sed mollis eget, pellentesque eu erat. Etiam pretium nisi nec tincidunt varius. Nam convallis sollicitudin imperdiet. Vestibulum lacinia molestie lectus, at consectetur odio interdum non. Phasellus eu nunc nec velit semper aliquet. Pellentesque aliquet tellus ante, ut viverra est tincidunt id.</p>
+        
+    <section class="image-review">
+        <div> 
+        <h2>What the products look like</h2>
+            <div class="review-images">
+                <img src="/public/images/slutty-vegan.jpeg" alt="a slutty vegan meal displayed on a wooden table with a red slutty vegan sign in the background">
+                <img src="/public/images/slutty-vegan-arm.jpg" alt="an arm holding a sandwich in front of a red slutty vegan sign">
+                <img src="/public/images/pinky-hold-sandwich.jpeg" alt="a person with red dreadlocks holding a slutty vegan sandwich that is dripping sauce or cheese">
+                <!-- These <img> tags will be displayed from the images uploaded from the create a review form. -->
+            </div>
+
+            <div class="button-center">
+                <button class="more-button" type="button">More pictures...</button>
+            </div>
+        </div>
+
     </section>
+    
 </main>
 <footer class="footer-layout">
     <div>
