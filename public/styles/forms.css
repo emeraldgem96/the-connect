@@ -22,7 +22,6 @@ h1, h2{
 .container-login a:link, a:visited, a:active {
     text-decoration: none;
     color: var(--off-black);
-    background-color: var(--haint-blue);
     padding: 1%;
 }
 
@@ -45,6 +44,10 @@ h1, h2{
     font-size: 1.1rem;
     background-color: var(--haint-blue);
     padding: 1%;
+}
+
+.highlight a {
+    background-color: var(--haint-blue);
 }
 
 #centered {
@@ -94,16 +97,16 @@ h1, h2{
 }
 
 .signupForm-flex a {
-    text-decoration: none;
+    text-decoration: 3px underline var(--haint-blue);
     color: var(--off-black);
-    background-color: var(--haint-blue);
-    padding: 1%;
+    
 }
 
 .signupForm-flex a:hover {
     text-decoration: none;
     color: var(--star-white);
     background-color: var(--off-black);
+    padding: 1%;
 }
 
 .signupForm-flex button[type='submit'] {

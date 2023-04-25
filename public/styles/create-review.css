@@ -1,13 +1,25 @@
-/* Header Centering */
+/* Header and Button */
 h1 {
     text-align: center;
+}
+
+.heading button {
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    background-color: var(--haint-blue);
+    padding: 1%;
+    margin: auto; 
+}
+
+#centered-v1 {
+    text-align: center;
+    margin-bottom: 2%;
 }
 
 /* Main create review section */
 form {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .name-section {
@@ -19,23 +31,33 @@ form {
 .business-review {
     border: 5px solid var(--off-black);
     margin: auto;
-    margin: 1%;
+    margin-top: 3%;
     padding: 1%;
-    width: 100%;
+    width: 95%;
     text-align: left;
+}
+
+.business-section {
+    border: 5px solid var(--haint-blue);
+    margin: 2%;
+    padding: 1%;
+}
+
+.business-section div {
+    padding: 1%;
 }
 
 .subheading {
     border: 5px solid var(--haint-blue) ;
-    padding: 2%;
-    margin: auto;
+    padding: 1%;
+    margin: 2%;
 }
 
 .subheading div {
     padding: 1%;
 }
 
-.subheading textarea {
+textarea {
     vertical-align: top;
 }
 
@@ -43,7 +65,7 @@ form {
     text-align: center;
 }
 
-#centered {
+#centered-v2 {
     text-align: center;
 }
 
