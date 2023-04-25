@@ -238,7 +238,7 @@ details > p a:hover {
 }
 
 .footer-layout img {
-    width: 35%;
+    width: 10%;
     margin: auto;
 }
 
@@ -289,5 +289,8 @@ details > p a:hover {
     .feature-content {
         margin: auto;
         margin-top: 2%;
+    }
+    .footer-layout img {
+        width: 20%;
     }
 }
