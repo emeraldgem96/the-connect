@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the connect</title>
     <link href="/public/styles/styles.css" rel="stylesheet">
+    <link href="/public/styles/reviews.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Sanchez&display=swap" rel="stylesheet">
@@ -27,8 +28,8 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                         <div class="dropdown-content">
-                            <a href="/views/pages/categories-food.html">food</a>
-                            <a href="/views/pages/categories-retail.html">retail</a>
+                            <a href="/views/pages/category-food.html">food</a>
+                            <a href="/views/pages/category-retail.html">retail</a>
                         </div>
                     </div></li>
                 </ul>
@@ -37,16 +38,34 @@
     <hr>
     <main>
         <section>
-            <h1>Food Reviews</h1>
-        </section>
-        <section>
-            <div>
-                <img src="">
-                <img src="">
-                <h2>Slutty Vegan</h2>
-                <p></p>
+            <h1>Food</h1>
+            <p>Yummy in your tummy, check out the reviews for black-owned food spots!</p>
+            <p>You can check out the retail category by clicking the <a href="/views/pages/category-retail.html">retail</a> link.</p>
+            <div class="button-center">
+                <button class="reviews-button"><a href="/views/pages/create-review.html">Create a Review</a></button>
             </div>
         </section>
+    <hr>
+
+    <section class="gallery-flex">
+        <div class="gallery">
+            <img src="/public/images/slutty-vegan.jpeg" alt="a slutty vegan meal displayed on a wooden table with a red slutty vegan sign in the background">
+            <img src="/public/images/slutty-vegan-arm.jpg" alt="an arm holding a sandwich in front of a red slutty vegan sign">
+            <img src="/public/images/pinky-hold-sandwich.jpeg" alt="a person with red dreadlocks holding a slutty vegan sandwich that is dripping sauce or cheese">
+            <div class="gallery-desc">
+                <h2>Slutty Vegan</h2>
+                    <h3>Rating: 5/5</h3>
+                    <p>To view the full review, you can open the <a href="review-slutty-vegan.html">review page</a> for Slutty Vegan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="button-center">
+            <button class="more-button" type="button">More reviews...</button>
+       </div> 
+    </section>
+
     </main>
     <footer class="footer-layout">
         <div>

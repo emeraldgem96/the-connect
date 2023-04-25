@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the connect</title>
     <link href="/public/styles/styles.css" rel="stylesheet">
+    <link href="/public/styles/create-review.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Sanchez&display=swap" rel="stylesheet">
@@ -27,8 +28,8 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                         <div class="dropdown-content">
-                            <a href="/views/pages/categories-food.html">food</a>
-                            <a href="/views/pages/categories-retail.html">retail</a>
+                            <a href="/views/pages/category-food.html">food</a>
+                            <a href="/views/pages/category-retail.html">retail</a>
                         </div>
                     </div></li>
                 </ul>
@@ -36,71 +37,90 @@
     </header>
     <hr>
     <main>
-         <h1><span class="highlight">Write a Review</span></h1>
-        <section class="overall-create">
-         <form>
-            <div class="intro-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name">
-
-            <label for="businessname">Business Name:</label> 
-            <input type="text" id="businessname" name="businessname">
+        <h1>Write a Review</h1>
+        <hr>
+    <section>
+        
+        <form>
             
-                <label>
+            <section class="business-review">
+             <div class="name-section">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="subheading">
+                <div>
+                    <label for="businessname">Business Name:</label> 
+                    <input type="text" id="businessname" name="businessname">
+                </div>
+
+                <div>
+                    <label>
+                        What category is this business under? Food or retail.
+                        <select>
+                            <option value="">--</option>
+                            <option value="food">Food</option>
+                            <option value="retail">Retail</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
                     What would you rating this business? </label>
-                    <select>
+                        <select>
                         <option value="">--</option>
                         <option value="1">1 star</option>
                         <option value="2">2 stars</option>
                         <option value="3">3 stars</option>
                         <option value="4">4 stars</option>
                         <option value="5">5 stars</option>
-                    </select>
-            </div>
+                        </select>
+                </div>
+                <div>
+                    <label for="title">Review Title:</label>
+                    <input type="text" id="title"> 
+                </div>
 
-            <div class="review-info">
-            <label for="title">Review Title:</label>
-            <input type="text" id="title">
-
-            <label for="thecomment">My Review:</label>
-            <textarea id="thecomment" name="thecomment" rows="4" cols="20" placeholder="Your comments go here..."></textarea>
-
-            <label>
-                Would you recommend this business? Select yes or no. 
-                <select>
-                  <option value="">--</option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </label>
-
-            <label>
-                What category is this business under? Food or retail.
-                <select>
-                    <option value="">--</option>
-                    <option value="food">Food</option>
-                    <option value="retail">Retail</option>
-                </select>
-            </label>
-            </div>
-            
-            <label for="img">Upload images:</label>
-            <input type="file" id="img" name="img" accept="image/">
-            <section class="agreement">
-                <p>By submitting this review, you agree to our <a href="#">Terms & Privacy Agreement</a>.</p>
-            </section>
-            <div class="review-submit">
+                <div>
+                   <label for="thecomment">My Review:</label>
+                    <textarea id="thecomment" name="thecomment" rows="5" cols="30" placeholder="Your comments go here..."></textarea>
+                </div>
                 
-            <button type="submit" value="submit">Submit Review</button>
-            </div>
+                <div>
+                    <label>
+                        Would you recommend this business? Select yes or no. 
+                        <select>
+                            <option value="">--</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </label>
+                </div>
+              </div>  
+            </section>
+            
+            <section class="business-review">
+                <label for="img">Upload images:</label>
+                <input type="file" id="img" name="img" accept="image/" multiple>
+            </section>
+            
+            <section class="business-review">
+                <div class="subheading">
+                    <p>By submitting this review, you agree to our <a href="#">Terms & Privacy Agreement</a>.</p>
+                    <div id="centered">
+                        <button type="submit" value="submit">Submit Review</button>
+                    </div>
+                </div>
+            </section>
+            
         </form>
-        </section>
-        <section class="social-media">
+    </section>
+    <section class="social-media">
             <h2>Share on social media!</h2>
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-square-instagram"></i>
             <i class="fa-brands fa-square-twitter"></i>
-        </section>
+    </section>
     </main>
     <footer class="footer-layout">
         <div>

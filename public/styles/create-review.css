@@ -1,4 +1,78 @@
-.highlight {
+/* Header Centering */
+h1 {
+    text-align: center;
+}
+
+/* Main create review section */
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-section {
+    text-align: center;
+    margin: 1%;
+    padding-bottom: 1%;
+}
+
+.business-review {
+    border: 5px solid var(--off-black);
+    margin: auto;
+    margin: 1%;
+    padding: 1%;
+    width: 100%;
+    text-align: left;
+}
+
+.subheading {
+    border: 5px solid var(--haint-blue) ;
+    padding: 2%;
+    margin: auto;
+}
+
+.subheading div {
+    padding: 1%;
+}
+
+.subheading textarea {
+    vertical-align: top;
+}
+
+.subheading p {
+    text-align: center;
+}
+
+#centered {
+    text-align: center;
+}
+
+.subheading button {
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    background-color: var(--haint-blue);
+    padding: 1%;
+    margin: auto;
+}
+
+.social-media {
+    text-align: center;
+    margin: 5%;
+}
+
+.subheading a:link, a:visited, a:active {
+    text-decoration: 3px underline var(--haint-blue);
+    color: var(--off-black);
+}
+
+.subheading a:hover {
+    background-color: var(--off-black);
+    color: var(--star-white);
+    padding: 1%;
+}
+
+/* .highlight {
     background-color: var(--main-black);
     color: var(--head-color-text);
     margin-top: 5%;
@@ -90,4 +164,4 @@ main a:hover,
         background-color: var(--main-green);
         color: var(--head-color-text);
         text-decoration: none;
-}
+} */
