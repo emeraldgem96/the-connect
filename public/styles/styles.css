@@ -111,7 +111,6 @@ nav a:hover {
 
 .dropbtn a:link, a:active, a:visited {
     font-size: 1.2rem;
-    background-color: var(--star-white);
 }
 
 /* Intro Section */
