@@ -42,12 +42,15 @@ form input[type='text'] {
     padding: 1%;
     width: 95%;
     text-align: left;
+    margin-bottom: 3%;
 }
 
 .business-section {
     border: 5px solid var(--haint-blue);
     margin: 2%;
     padding: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .business-section div {
@@ -57,7 +60,7 @@ form input[type='text'] {
 .subheading {
     border: 5px solid var(--haint-blue) ;
     padding: 1%;
-    margin: 2%;
+    margin: 3%;
 }
 
 .subheading div {
@@ -88,6 +91,11 @@ textarea {
     background-color: var(--haint-blue);
     padding: 1%;
     margin: auto;
+}
+
+.reviews-button a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: var(--off-black);
 }
 
 .social-media {
