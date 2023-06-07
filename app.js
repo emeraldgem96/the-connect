@@ -4,6 +4,7 @@ const PORT = 3000;
 const morgan = require('morgan');
 const path = require('node:path');
 const methodOverride = require('method-override');
+const mongoose = require('mongoose');
 const routes = require('./routes/index');
 
 app.use(morgan('combined'));
