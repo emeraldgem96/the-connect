@@ -48,6 +48,7 @@ h3, p {
 /* Actual reviews with images and buttons */
 .gallery-flex {
     display: flex;
+    justify-content: center;
 }
 
 div.gallery {
@@ -59,7 +60,8 @@ div.gallery {
 
 div.gallery img {
     width: 100%;
-    margin-top: 1%;
+    margin-top: 2%;
+    border: 5px solid var(--off-black);
 }
 
 div.gallery-desc {
