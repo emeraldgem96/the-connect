@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+.admin-flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.admin-div {
+    width: 50%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--haint-blue);
+    margin: 2%;
+    padding: 5%;
+    text-align: center;
+}
+
+.admin-div h2 {
+    text-decoration: 5px solid underline var(--haint-blue);
+}
+
+.logout-btn {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.admin-div button {
+    font-size: 90%;
+    border: none;
+    font-family: var(--body-font);
+    background-color: var(--haint-blue);
+    margin: 3%;
+    padding: 3%;
+    text-align: center;
+    width: 50%;
+}
+
+.logout-btn button {
+    border: none;
+    font-family: var(--body-font);
+    background-color: var(--haint-blue);
+    margin: 2%;
+    padding: 2%;
+    font-size: 90%;
+    text-align: center;
+    width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .admin-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
