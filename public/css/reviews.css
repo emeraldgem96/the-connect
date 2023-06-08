@@ -1,7 +1,7 @@
 /* Reviews Header/Top Section */
 h1 {
     text-align: center;
-    text-decoration: solid underline var(--haint-blue);
+    text-decoration: 5px solid underline var(--haint-blue);
 }
 
 h3, p {
