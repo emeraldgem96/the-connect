@@ -2,6 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 // require passport and session
+const session = require('express-session');
+const passport = require('passport');
 const PORT = process.env.PORT || 3000;
 const morgan = require('morgan');
 const path = require('node:path');
@@ -12,13 +14,23 @@ app.use(morgan('combined'));
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// app.use(session({}); 
+
+app.use(session({
+    secret: process.env.SECRET_KEY,
+    resave: false,
+    saveUninitialized: false
+}))
 // need to reference the params of secret, resave, and saveUninitialized
 app.use('/', routes);
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+app.use(passport.initialize());
+app.use(passport.session());
 // initialized passport
 // passport to use session
+
 
 // app.get('/reviews', (request, response) => {
 //     response.render('pages/reviews');
