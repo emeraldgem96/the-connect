@@ -7,6 +7,6 @@ router.route('/')
     .get(reviewController.reviews)
 
 router.route('/:_id')
-    .get(reviewController.review)
+    .get(reviewController.review_get)
 
 module.exports = router;

@@ -14,4 +14,7 @@ router.route('/create-business')
     .get(adminController.business_create)
     .post(adminController.business_create_post)
 
+router.route('/logout')
+    .get(adminController.logout)
+
 module.exports = router;
