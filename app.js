@@ -21,12 +21,11 @@ app.use(session({
     saveUninitialized: false
 }))
 // need to reference the params of secret, resave, and saveUninitialized
+app.use(passport.initialize());
 app.use('/', routes);
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-app.use(passport.initialize());
 app.use(passport.session());
 // initialized passport
 // passport to use session
