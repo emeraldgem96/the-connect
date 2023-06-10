@@ -1,19 +1,24 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const PORT = 3000;
+// require passport and session
+const PORT = process.env.PORT || 3000;
 const morgan = require('morgan');
 const path = require('node:path');
 const methodOverride = require('method-override');
-const mongoose = require('mongoose');
 const routes = require('./routes/index');
 
 app.use(morgan('combined'));
-app.use(methodOverride('method'));
+app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: true }));
-app.use(routes);
+app.use(express.json());
+// app.use(session({}); 
+// need to reference the params of secret, resave, and saveUninitialized
+app.use('/', routes);
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
-
+// initialized passport
+// passport to use session
 
 // app.get('/reviews', (request, response) => {
 //     response.render('pages/reviews');
@@ -40,6 +45,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 // });
 
 // Server
+
+require('./config/connection')
+
 app.listen(PORT, () => {
     console.log(`The server is listening on port ${PORT}`);
 });
