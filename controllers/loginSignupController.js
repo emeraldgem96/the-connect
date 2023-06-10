@@ -24,7 +24,7 @@ module.exports = {
         User.register({username: request.body.username}. request.body.password, (error, user) => {
             if (error) {
                 console.log(error);
-                response.redirect('/register');
+                response.redirect('/login/register');
             } else {
                 passport.authenticate('local')(request, response, () => {
                 response.redirect('/login');  
