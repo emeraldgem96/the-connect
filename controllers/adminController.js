@@ -22,8 +22,12 @@ module.exports = {
 
     },
     logout: (request, response) => {
-        // request.logout();
-        // response.redirect('/login');
+        request.logout(request.user, err => {
+            if (err)
+            return next(err);
+            response.redirect('/login');
+        });
+        
     }
 }
 
