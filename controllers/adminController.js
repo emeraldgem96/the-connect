@@ -25,7 +25,7 @@ module.exports = {
         request.logout(request.user, err => {
             if (err)
             return next(err);
-            response.redirect('/login');
+            response.redirect('/');
         });
         
     }
