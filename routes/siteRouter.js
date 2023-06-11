@@ -6,4 +6,7 @@ const router = express.Router();
 router.route('/')
     .get(siteController.index)
 
+router.route('/reviews')
+    .get(siteController.reviews)
+
 module.exports = router;
