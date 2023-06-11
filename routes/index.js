@@ -6,7 +6,7 @@ const adminRouter = require('../routes/adminRouter');
 const router = express.Router();
 
 router.use('/', siteRouter);
-router.use('/reviews', reviewRouter);
+router.use('/review', reviewRouter);
 router.use('/login', loginSignupRouter);
 router.use('/admin', adminRouter);
 
