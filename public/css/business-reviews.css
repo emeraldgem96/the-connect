@@ -74,6 +74,16 @@
     overflow-y: auto;
 }
 
+.view-details-btn {
+    background-color: var(--haint-blue);
+    color: var(--off-black);
+    width: 50%;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-family: var(--body-font);
+    font-size: 100%;
+}
+
 /* Image review section */
 .image-review {
     background-color: var(--haint-blue);
