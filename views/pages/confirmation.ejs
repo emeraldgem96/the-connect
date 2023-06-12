@@ -3,54 +3,23 @@
 <%- include('../partials/navbar') -%>
 
 <main>
-    <section class="title-desc">
-        <a href="/reviews">Return to Reviews</a>
-        <h1>Nourish + Bloom Market</h1>
-        <h3>What can I get here:</h3>
-            <p>Convenient and healthy foods from local sources that is available 24/7/365, since the store is completely autonomous (shopping, vending, and robotic delivery)</p>
-            <p>Rating: 5/5</p>
-        <!-- Bold the <p> below with CSS, we need to use JS to calculate the rating from the views using the numbers in ratings box -->
-    </section>
-    <section class="general-info">
-
-        <div class="first-box">
-            <h2>General information:</h2> 
-            <h3>Location:</h3>
-                <p>300 Trilith Parkway Suite 250, Fayetteville, GA 30214</p>
-                <p>For more information about Nourish + Bloom Market, you can visit the <a href="https://www.nourishandbloommarket.com/">Nourish + Bloom website.</a></p>
-        </div>
-        
-        <div class="second-box">
-            <h2>What people are saying</h2>
-            <!-- The <p> is where the form's <textarea> response will display in quotations. There will be several <p> tags with different quotes from multiple reviews.  -->
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p> 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p> 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p> 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p> 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p>  
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mauris et est efficitur, vel consectetur sapien efficitur. Etiam non consequat ligula. In lacinia eget nisi ut tincidunt."</p>
-        </div>
-
-    </section>
-    
-    <section class="image-review">
-        <div>
-        <h2>What the products look like</h2>  
-           <div class="review-images">
-                <img src="/img/n-b-tacos.jpeg" alt="picture of pork tacos with sauce and sliced radish on the side with the nourish and bloom logo above">
-                <img src="/img/n-b-aisle.jpeg" alt="picture of the nourish and bloom snack aisle"> 
-                <!-- These <img> tags will be displayed from the images uploaded from the create a review form. -->
+    <section class="business-review">
+        <h1>Successfully Submitted!</h1>
+            <div>
+                <p>Thanks for your form submission! You can view your review under the business you reviewed or head back to the console to add more (if the spirit so moves you).</p>
             </div>
-            
-            <div class="button-center">
-                <button class="more-button" type="button">More pictures...</button>
-            </div>
-        </div>
-
     </section>
 
+    <section>
+        <div class="flex-btn">
+            <button class="redirect">
+                <a href="/reviews">Back to Reviews</a>
+            </button >
+            <button class="redirect">
+                <a href="/admin">Back to Admin Console</a>
+            </button>
+        </div>
+    </section>
 </main>
 
-<%- include('../partials/footer') -%>
+<%- include('../partials/footer') -%> 

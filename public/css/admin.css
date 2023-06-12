@@ -50,6 +50,25 @@
     width: 20%;
 }
 
+.redirect {
+    border: none;
+    font-family: var(--body-font);
+    background-color: var(--haint-blue);
+    margin: 2%;
+    padding: 2%;
+    font-size: 90%;
+    width: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 @media screen and (max-width: 768px) {
     .admin-flex {
         display: flex;
