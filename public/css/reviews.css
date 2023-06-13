@@ -100,4 +100,7 @@ div.gallery-desc {
         flex-direction: column;
         align-items: center;
     }
+    div.gallery-desc {
+        width: 70%;
+    }
 }
