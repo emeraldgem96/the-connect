@@ -48,7 +48,8 @@ h3, p {
 /* Actual reviews with images and buttons */
 .gallery-flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 div.gallery {
@@ -65,10 +66,11 @@ div.gallery img {
 }
 
 div.gallery-desc {
-    border: solid 5px var(--off-black);
-    margin-top: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    border: solid 3px var(--off-black);
+    width: 30%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    padding: 2%;
     text-align: center;
 }
 
@@ -86,6 +88,10 @@ div.gallery-desc {
     margin-bottom: 5%; 
     text-align: center;
     width: 30%;
+}
+
+#hr-reviews {
+    height: 5px;
 }
 
 /* Media Queries */
