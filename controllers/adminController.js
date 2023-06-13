@@ -1,3 +1,4 @@
+const Review = require('../models/reviewModel');
 
 module.exports = {
     admin: (request, response) => {
@@ -8,18 +9,22 @@ module.exports = {
     }, 
     review_create_post: (request, response) => {
         // Create operation from CS Comics 
-        response.redirect()
+        const {title, comment, recommend} = request.body;
+        const newReview = new Review ({
+            review_title: review_title,
+            review_comment: review_comment,
+            recommend: recommend
+        })
+
+        newReview.save();
+
+        response.redirect('/confirmation');
         // need to redirect to a conf. page
 
     },
-    business_create: (request, response) => {
-        response.render('pages/create-business')
-    },
-    business_create_post: (request, response) => {
-        // Create operation from CS Comics
-        response.redirect()
         // need to redirect to a conf. page
-
+    confirmation: (request, response) => {
+        response.render('pages/confirmation');
     },
     logout: (request, response) => {
         request.logout(request.user, err => {
@@ -27,7 +32,7 @@ module.exports = {
             return next(err);
             response.redirect('/');
         });
-        
-    }
+    },
+
 }
 
