@@ -8,67 +8,76 @@
         <div id="centered-v1">
             <button type="button"><a href="/reviews">Back to Reviews</a> 
             </button>
+            <button type="button"><a href="/admin">Back to Admin Console</a></button>
         </div>
     </section>
         <hr>
     <section>
         
-        <form action="/admin/" method="">
+        <form class="business-review" action="/reviews" method="POST">
             
-        <div class="business-review">
              <!-- <div class="name-section">
                     <label for="name">Your Name :</label>
                     <input type="text" id="name">
                 </div> removing the name section (unnecessary)-->
 
         <section>
-                <div class="business-section">
-                <!-- <div>
-                    <label for="businessname">Business Name :</label> 
-                    <input type="text" id="businessname" name="businessname">
-                </div> -->
+            <div class="business-section">
+                <div>
+                    <label for="business_name">Business Name:</label> 
+                    <input type="text" id="business_name" name="business_name" minlength="1" required />
+                </div> 
 
                 <div>
-                    <label>
-                    What would you rating this business? 
-                    </label>
-                        <select>
-                        <option value="">--</option>
-                        <option value="1">1 star</option>
-                        <option value="2">2 stars</option>
-                        <option value="3">3 stars</option>
-                        <option value="4">4 stars</option>
-                        <option value="5">5 stars</option>
+                    <label for="business_address">Business Address:</label>
+                    <input type="text" id="business_address" name="business_address" minlength="5" required />
+                </div>
+
+                <div>
+                    <label for="business_website">Business Website:</label>
+                    <input type="text" id="business_website" name="business_website" />
+                </div>
+
+                <div>
+                    <label for="category"> What category is this business under? Food or retail.</label>
+                        <select name="category" id="category" required >
+                            <option value="">--</option>
+                            <option value="food">Food</option>
+                            <option value="retail">Retail</option>
                         </select>
                 </div>
-                </div>
-        </section>
+            </div>
 
         <section>
             <div class="business-section">
                 <div>
-                    <label for="title">Review Title :</label>
-                    <input type="text" id="title"> 
+                    <label for="rating">What would you rating this business?</label>
+                    <input type="number" id="rating" name="rating" min="1" required />
                 </div>
 
                 <div>
-                   <label for="thecomment">My Review :</label>
-                    <textarea id="thecomment" name="thecomment" rows="5" cols="30" maxlength="1000" placeholder="Your comments go here... 1000 characters max"></textarea>
+                    <label for="review_title">Review Title:</label>
+                    <input type="text" id="review_title" name="review_title" maxlength="50" required />
                 </div>
-                
+
                 <div>
-                    <label>
+                    <label for="review_blurb">Review Blurb: </label>
+                    <textarea id="review_blurb" name="review_blurb" rows="5" cols="30" maxlenght="500" placeholder="Your blurb goes here... 500 characters max" minlength="50" maxlength="500" required ></textarea>
+                </div>
+            
+                <div>
+                    <label for="recommend">
                         Would you recommend this business? Select yes or no. 
-                        <select>
+                        <select name="recommend" id="recommend" required >
                             <option value="">--</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
                     </label>
                 </div>
+
               </div>
         </section>
-    
             
             <!-- <div class="subheading">
                 <label for="img">Upload images:</label>
@@ -85,7 +94,7 @@
             </div>
             
         </form>
-    </section>
+      </section>
     <section class="social-media">
             <h2>Share on social media!</h2>
             <i class="fa-brands fa-square-facebook"></i>
