@@ -44,6 +44,9 @@ h3, p {
     width: 30%;
 }
 
+.p-adjust {
+    padding: 2%;
+}
 
 /* Actual reviews with images and buttons */
 .gallery-flex {
