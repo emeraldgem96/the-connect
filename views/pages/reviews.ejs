@@ -4,6 +4,7 @@
 
     <main>
         <section>
+
             <h1>Reviews</h1> 
                 <!-- <h3>Categories</h3>
                 <p>You can view reviews based on the categories. It's just one click away!</p>
@@ -20,46 +21,34 @@
                 <div class="button-center">
                     <button class="reviews-button"><a href="/login">Login or Create an Account</a></button>
                 </div>
+
         </section>
+
         <hr>
+
         <section class="gallery-flex">
-            <div class="gallery">
+            <!-- <div class="gallery">
                 <img src="/img/slutty-vegan.jpeg" alt="a slutty vegan meal displayed on a wooden table with a red slutty vegan sign in the background">
                 <img src="/img/slutty-vegan-arm.jpg" alt="an arm holding a sandwich in front of a red slutty vegan sign">
                 <img src="/img/pinky-hold-sandwich.jpeg" alt="a person with red dreadlocks holding a slutty vegan sandwich that is dripping sauce or cheese">
+            </div> changing the format of project and turning gallery into cards -->
+            <% for (review of reviewArray) { %>
                 <div class="gallery-desc">
-                    <!-- for loop start here! --> 
-                <% for (business of businessArray) { %>
                     <span>
-                        <h2><%= business.business_name %></h2>
+                        <h2><%= review.business_name %></h2>
+                        <p><%= review.business_address %></p>
+                        <p><a href="<%= review.website %>">Website</a></p>
+                <hr id="hr-reviews"> 
+                        <p>Rating: <%= review.rating %> stars</p>
+                        <p>"<%= review.review_title %>"</p>
+                        <p>"<%= review.review_blurb %>"</p>
+                        <p>Recommend: <%= review.recommend %></p>
                     </span>
                 
-                    <!-- for loop ends here -->
-                
-                    <button class="view-details-btn"><a href="/review/details"><%= business.business_name %> Reviews</a></button>
-                
-                <% } %>
                 </div>
-            </div>
-    
-            <!-- <div class="gallery">
-                <img src="/img/n-b-tacos.jpeg" alt="picture of pork tacos with sauce and sliced radish on the side with the nourish and bloom logo above">
-                <img src="/img/n-b-aisle.jpeg" alt="picture of the nourish and bloom snack aisle">
-                <div class="gallery-desc">
-                    <h2>Nourish + Bloom Market</h2>
-                        <h3>Rating: 5/5</h3>
-                        <p id="adjust-p">To view the full review, you can open the <a href="/review-nourish-and-bloom">review page</a> for Nourish + Bloom.</p>
-                </div>
-            </div> -->
-            
-            
-        </section>
+            <% } %>
+        </section> 
 
-        <section>
-            <div class="button-center">
-                <button class="more-button" type="button">More reviews...</button>
-           </div> 
-        </section>
     </main>
  
 <%- include('../partials/footer') -%>
