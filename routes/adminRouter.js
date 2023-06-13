@@ -10,9 +10,8 @@ router.route('/create-review')
     .get(adminController.review_create)
     .post(adminController.review_create_post)
 
-router.route('/create-business')
-    .get(adminController.business_create)
-    .post(adminController.business_create_post)
+router.route('/submission-success')
+    .get(adminController.confirmation)
 
 router.route('/logout')
     .get(adminController.logout)
