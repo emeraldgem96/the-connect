@@ -1,5 +1,6 @@
 const { response } = require("express");
 
+// Hide/Unhide Create Account button
 function createAccount() {
     let formSign = document.getElementById("signupForm");
     if (formSign.style.display === "none") {

@@ -97,6 +97,10 @@ div.gallery-desc {
     height: 5px;
 }
 
+#signupForm {
+    display: none;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     .gallery-flex {
