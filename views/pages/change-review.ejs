@@ -1,0 +1,42 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/navbar') -%>
+
+<section>
+
+    <h1>Table of Reviews</h1>
+    <p>Currently, the site creator is the only person able to delete reviews. But, not to worry, they are working tirelessly to get their users access to update and delete their own reviews.</p>
+    <hr>
+
+</section>
+
+<section class="admin-flex">
+
+    <div class="div-width">
+        <table class="change-table">
+            <thead>
+                <th>Business Name</th>
+                <th>Review Title</th>
+                <th>Rating</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <% for (review of reviewArray) { %>
+                <tr>
+                    <td><%= review.business_name %></td>
+                    <td><%= review.review_title %></td>
+                    <td class="rating"><%= review.rating %></td>
+                    <td>
+                        <form action="/admin/change-review/<%= review._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
+                            <button class="query-change-size">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<%- include('../partials/footer') -%>
