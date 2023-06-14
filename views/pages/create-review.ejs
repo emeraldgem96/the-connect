@@ -14,7 +14,7 @@
         <hr>
     <section>
         
-        <form class="business-review" action="/reviews" method="POST">
+        <form class="business-review" action="/admin/create-review" method="POST">
             
              <!-- <div class="name-section">
                     <label for="name">Your Name :</label>
@@ -30,7 +30,7 @@
 
                 <div>
                     <label for="business_address">Business Address:</label>
-                    <input type="text" id="business_address" name="business_address" minlength="5" required />
+                    <input type="text" id="business_address" name="business_address" minlength="5" placeholder="Ex. 123 Main St. New York, NY 10001" required />
                 </div>
 
                 <div>
@@ -52,7 +52,7 @@
             <div class="business-section">
                 <div>
                     <label for="rating">What would you rating this business?</label>
-                    <input type="number" id="rating" name="rating" min="1" required />
+                    <input type="number" id="rating" name="rating" min="1" max="5" required />
                 </div>
 
                 <div>
