@@ -6,6 +6,10 @@ const router = express.Router();
 router.route('/')
     .get(adminController.admin)
 
+router.route('/change-review')
+    .get(adminController.change_review)
+    .delete(adminController.review_delete)
+
 router.route('/create-review')
     .get(adminController.review_create)
     .post(adminController.review_create_post)
