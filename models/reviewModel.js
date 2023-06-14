@@ -14,6 +14,7 @@ const reviewSchema = new Schema({
     },
     website: {
         type: String,
+        default: "https://www.google.com/"
     },
     category: {
         type: String,
@@ -22,7 +23,8 @@ const reviewSchema = new Schema({
     rating: {
         type: Number,
         required: [true, 'The rating is required.'],
-        min: [1, 'Minimun number of rating is 1']
+        min: [1, 'Minimun number of rating is 1'],
+        max: [5, 'Maximum number of rating is 5']
     },
     review_title: {
         type: String,
@@ -37,6 +39,10 @@ const reviewSchema = new Schema({
     recommend: {
         type: String,
         required: true
+    },
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
     }
 });
 
