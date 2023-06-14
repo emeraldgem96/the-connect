@@ -14,12 +14,17 @@
     border-width: 10px;
     border-color: var(--haint-blue);
     margin: 2%;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
 }
 
 .admin-div h2 {
     text-decoration: 5px solid underline var(--haint-blue);
+}
+
+.admin-div a {
+    text-decoration: none;
+    color: var(--off-black);
 }
 
 .logout-btn {
@@ -69,9 +74,33 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.div-width {
+    width: 90%;
+    margin: 2%;
+}
+
+.change-table {
+    width: 100%;
+}
+
+.rating {
+    text-align: center;
+}
+
+.query-change-size {
+    margin: auto;
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     .admin-flex {
         display: flex;
         flex-wrap: wrap;
+    }
+    .query-change-size {
+        width: 100%;
+        margin: auto;
+        padding: 0;
     }
 }
