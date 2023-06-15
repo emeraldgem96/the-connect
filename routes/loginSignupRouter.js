@@ -10,4 +10,10 @@ router.route('/')
 router.route('/register')
     .post(loginSignupController.register_post)
 
+router.route('/auth/google')
+    .get(loginSignupController.google_get)
+
+router.route('/auth/google/admin')
+    .get(loginSignupController.google_redirect_get)
+
 module.exports = router;

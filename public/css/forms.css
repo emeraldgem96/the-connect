@@ -3,6 +3,17 @@ h1, h2{
     text-align: center;
 }
 
+.google-btn {
+    border: none;
+    font-family: var(--body-font);
+    background-color: var(--haint-blue);
+    margin: 3%;
+    padding: 2%;
+    font-size: 80%;
+    text-align: center;
+    width: 50%;
+}
+
 .container-login {
     border: 5px solid var(--off-black);
     width: 80%;

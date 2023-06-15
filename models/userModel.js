@@ -23,6 +23,7 @@ const userSchema = new Schema({
 });
 
 userSchema.plugin(passportLocalMongoose);
+userSchema.plugin(findOrCreate);
 
 const User = mongoose.model('User', userSchema);
 
@@ -46,7 +47,7 @@ passport.use(
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
       callbackURL:
-        "http://localhost:3000/auth/google/admin",
+        "http://localhost:3000/login/auth/google/admin",
     },
     function (accessToken, refreshToken, email, cb) {
       console.log(email);
