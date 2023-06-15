@@ -101,6 +101,26 @@ div.gallery-desc {
     display: none;
 }
 
+#myButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    border-radius: 3%;
+    outline: none;
+    background-color: var(--haint-blue);
+    color: var(--off-black);
+    font-family: var(--body-font);
+    font-size: 100%;
+    padding: 2%;
+}
+
+#myButton:hover {
+    background-color: var(--star-white);
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     .gallery-flex {
