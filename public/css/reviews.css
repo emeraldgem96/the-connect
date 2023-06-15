@@ -30,6 +30,8 @@ h3, p {
 
 .button-center {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .reviews-button {
