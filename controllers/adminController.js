@@ -50,16 +50,17 @@ module.exports = {
           response.status(500).send('Internal Server Error');
         }
       },
-    review_delete: (request, response) => {
-        const { _id } = request.params;
-        Review.deleteOne({ _id:_id}, (error) => {
-            if(error) {
-                return error;
-            } else {
-                response.redirect('/admin/change-review')
-            }
-        });
-    },
+      review_delete: async (request, response) => {
+        try {
+          const { _id } = request.params;
+          await Review.deleteOne({ _id: _id });
+          response.redirect('/admin/change-review');
+        } catch (error) {
+          // Handle the error
+          console.error(error);
+        }
+      },
+      
         // need to redirect to a conf. page
     confirmation: (request, response) => {
         response.render('pages/confirmation');

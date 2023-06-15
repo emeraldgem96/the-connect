@@ -8,6 +8,8 @@ router.route('/')
 
 router.route('/change-review')
     .get(adminController.change_review)
+
+router.route('/change-review/:_id')
     .delete(adminController.review_delete)
 
 router.route('/create-review')

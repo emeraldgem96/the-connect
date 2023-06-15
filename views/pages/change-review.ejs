@@ -2,10 +2,10 @@
 
 <%- include('../partials/navbar') -%>
 
-<section>
+<section >
 
     <h1>Table of Reviews</h1>
-    <p>Currently, the site creator is the only person able to delete reviews. But, not to worry, they are working tirelessly to get their users access to update and delete their own reviews.</p>
+    <p class="change-review">Currently, the site creator is the only person able to delete reviews. But, not to worry, they are working tirelessly to get their users access to update and delete their own reviews.</p>
     <hr>
 
 </section>
@@ -28,7 +28,7 @@
                     <td class="rating"><%= review.rating %></td>
                     <td>
                         <form action="/admin/change-review/<%= review._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded" class="inline">
-                            <button class="query-change-size">Delete</button>
+                            <input value="Delete" class="query-change-size" type="submit" />
                         </form>
                     </td>
                 </tr>
