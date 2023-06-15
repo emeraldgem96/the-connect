@@ -33,6 +33,11 @@
     text-align: center;
 }
 
+.logout-btn a {
+    text-decoration: none;
+    color: var(--off-black);
+}
+
 .admin-div button {
     font-size: 90%;
     border: none;
@@ -104,6 +109,10 @@
 .change-review {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+#protected-button {
+    color: var(--off-black);
 }
 
 @media screen and (max-width: 768px) {
