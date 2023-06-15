@@ -10,12 +10,7 @@ module.exports = {
         };        
     },
     review_create: (request, response) => {
-        console.log(request.isAuthenticated());
-        if(request.isAuthenticated()) {
-            response.render('pages/create-review')
-        } else {
-            response.redirect('/login')
-        };
+          response.render('pages/create-review');
     }, 
     review_create_post: (request, response) => {
         // Create operation from CS Comics 
@@ -60,7 +55,6 @@ module.exports = {
           console.error(error);
         }
       },
-      
         // need to redirect to a conf. page
     confirmation: (request, response) => {
         response.render('pages/confirmation');
