@@ -51,6 +51,12 @@ h3, p {
     padding: 2%;
 }
 
+#blocked-button {
+    color: var(--off-black);
+    background-color: var(--haint-blue);
+    text-decoration: none;
+}
+
 /* Actual reviews with images and buttons */
 .gallery-flex {
     display: flex;
