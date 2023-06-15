@@ -82,6 +82,9 @@
 
 .change-table {
     width: 100%;
+    padding-top: 3% ;
+    padding-bottom: 5%;
+    
 }
 
 .rating {
@@ -91,6 +94,16 @@
 .query-change-size {
     margin: auto;
     display: block;
+    background-color: var(--off-black);
+    color: var(--star-white);
+    font-family: var(--body-font);
+    border-radius: 2px;
+    border: none;
+}
+
+.change-review {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 @media screen and (max-width: 768px) {
