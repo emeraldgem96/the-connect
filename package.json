@@ -1,12 +1,12 @@
 {
   "name": "the-connect",
   "version": "1.0.0",
-  "description": "",
+  "description": "the Connect is a review and ratings site for black-owned small businesses ",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Imani Moody",
+  "author": "Imani",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -19,13 +19,13 @@
     "mongodb": "^5.5.0",
     "mongoose": "^7.2.1",
     "mongoose-findorcreate": "^4.0.0",
+    "morgan": "^1.10.0",
     "override": "^0.0.1",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^8.0.0",
-    "uuid": "^9.0.0",
-    "morgan": "^1.10.0"
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
