@@ -77,6 +77,7 @@ h1, h2{
     font-family: var(--body-font);
     font-size: 1.1rem;
     background-color: var(--haint-blue);
+    color: var(--off-black);
     padding: 1%;
     margin: auto;
 }
@@ -87,13 +88,6 @@ h1, h2{
     margin-top: 2%;
     margin-bottom: 2%;
     width: 50%;
-}
-
-#center-create button a:hover {
-    text-decoration: none;
-    color: var(--star-white);
-    background-color: var(--off-black);
-    padding: 1%;
 }
 
 /* Create account CSS */
@@ -140,4 +134,14 @@ h1, h2{
     font-size: 1.1rem;
     background-color: var(--haint-blue);
     padding: 1%;
+}
+
+.submit-css {
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    background-color: var(--haint-blue);
+    color: var(--off-black);
+    padding: 1%;
+    margin: auto;
 }
