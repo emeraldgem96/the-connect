@@ -65,6 +65,13 @@ h1, h2{
     text-align: center;
 }
 
+#centered button a:hover {
+    text-decoration: none;
+    color: var(--star-white);
+    background-color: var(--off-black);
+    padding: 1%;
+}
+
 .create-button {
     border: none;
     font-family: var(--body-font);
@@ -80,6 +87,13 @@ h1, h2{
     margin-top: 2%;
     margin-bottom: 2%;
     width: 50%;
+}
+
+#center-create button a:hover {
+    text-decoration: none;
+    color: var(--star-white);
+    background-color: var(--off-black);
+    padding: 1%;
 }
 
 /* Create account CSS */
