@@ -80,6 +80,20 @@ div.gallery-desc {
     text-align: center;
 }
 
+.gallery-desc a:link, 
+a:visited, 
+a:active {
+    text-decoration: underline 3px var(--haint-blue);
+    color: var(--off-black);
+}
+
+.gallery-desc a:hover {
+    background-color: var(--off-black);
+    color: var(--star-white);
+    font-size: 105%;
+    padding: 1%;
+}
+
 #adjust-p {
     padding-bottom: 4%;
 }
